@@ -24,113 +24,101 @@
 .App-intro {
   font-size: large;
 }
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-.test-app .col {
-  float: right;
-  overflow: hidden;
-}
-.test-app .col.col1 {
-  width: 100px;
-  margin-left: 10px;
-}
-.test-app .col.col2 {
-  width: 150px;
-  margin-left: 10px;
-}
-.test-app .col.col3 {
-  width: 200px;
-  margin-left: 10px;
-}
 .test-app {
-  width: auto;
-  position: relative;
+  width: 100%;
 }
+
 .test-app .row {
   float: right;
+  -overflow: hidden;
   margin: 5px 10px;
-  width: 100%;
-  max-width: 200px;
+  margin-bottom: 16px;
+   /*clear: both;*/
   box-sizing: border-box;
 }
+
+.test-app .col {
+  float: right;
+}
+
+.test-app .col.col1 {
+  width: 100px;
+}
+
+.test-app .col.col2 {
+  width: 150px;
+}
+
+.test-app .col.col3 {
+  width: 200px;
+}
+
+.dropdownCls{
+  width: inherit;
+}
 .textSelect {
-  border: 1px solid #aba899;
-  width: 100%;
-  height: 7vh;
-  max-height: 37px;
+  border: 0px;
+  width: inherit;
+  height: 37px;
   margin: 0px;
-  line-height: 6vh;
+  line-height: 37px;
   position: relative;
-}
-.test-app .col.col1 .row div .textSelect {
-  width: 88%;
-}
-.test-app .col.col2 .row div .textSelect {
-  width: 92%;
-}
-.test-app .col.col3 .row div .textSelect {
-  width: 94%;
+  box-sizing: border-box;
 }
 .textSelect > input {
-  padding: 0px 5px 0px 0px;
+  position: absolute;
+  right: 0px;
   float: right;
+  padding: 0px 5px 0px 0px;
+  border: 1px solid #aba899;
+  width: inherit;
+  height: 35px;
+  background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFxJREFUeNpivHD26Jy7t68k/2f4zwACjEAIYf1nUFbV6WDSN7JKATLmMkABROF/BhVV3VYDI+tKJpAgSJGKqs4CBqgZQA2tQLEaiI7//+EYaN3882ePtCCLAQQYAML4LgPQ+wrJAAAAAElFTkSuQmCC") no-repeat 10px center;
+  -webkit-background-size: 10px 5px;
+     -moz-background-size: 10px 5px;
+      -ms-background-size: 10px 5px;
+       -o-background-size: 10px 5px;
+          background-size: 10px 5px;
+          
+  -webkit-background-position-x: 3%;
+     -moz-background-position-x: 3%;
+      -ms-background-position-x: 3%;
+       -o-background-position-x: 3%;
+          background-position-x: 3%;
+  line-height: 35px;
   font-family: Arial;
   font-size: 12px;
   color: #585857;
   cursor: pointer;
-  width: 97%;
-  height: 7vh;
-  line-height: 7vh;
-  max-height: 37px;
-  -margin-top: 10px;
-  border: 0px;
-  background-color: transparent;
-
-  position: absolute;
-  right: 1%;
   z-index: 2;
 }
-.textSelect:hover, .textSelect > input:hover {
+.textSelect:hover, .textSelect > input:hover{
   background-color: #f2f2f2;
-}
-.textSelect > input:hover {
-width: 90%;
-}
-a, a:link, a:visited, a:focus, a:hover, a:active, .textSelect > input:hover {
-  border: 0px;
-}
-/* The styles that create select arrows */
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  position: absolute;
-  left: 1%;
-  z-index: 5;
-}
-.fa-caret-down:before {
-  content:"\f0d7"
-}
-.caret-down-icon {
-  color: #aba899; 
-  font-size: 1.05rem !important; 
-  cursor: pointer;
-  -padding: 10px 5px 0px 5px;
-  padding: 10px 0px 0px 5px;
-  float: left;
+} 
+.activeInp {
+  background: #f2f2f2 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGdJREFUeNo0TNsJgDAMvFi38Ff/3ErRLQqCMwgO5KcgWL9aRynxoniBXLhH5Ng3ByArlIRJIBWgPSBU1JVcmaKF/B0vTxN101p4pJ4LfKAZXtOQYuhIi90WmFM8vb20+cHCQFofAQYAdqUh9fxsLgQAAAAASUVORK5CYII=") no-repeat 5px center !important;
+  -webkit-background-position-x: 2.5% !important;
+     -moz-background-position-x: 2.5% !important;
+      -ms-background-position-x: 2.5% !important;
+       -o-background-position-x: 2.5% !important;
+          background-position-x: 2.5% !important;
+  -webkit-background-size: 10px 4px !important;
+     -moz-background-size: 10px 4px !important;
+      -ms-background-size: 10px 4px !important;
+       -o-background-size: 10px 4px !important;
+          background-size: 10px 4px !important;
 }
 /* Styles that create a select list with an arrow at the top */
 .listSelect {
   position: relative;
-  margin: 15px 0px;
+  margin: 11px 0px;
   padding: 0px;
-  width: 88%;
+  width: calc(100% + 5px);
   height: 300px;
   border: 1px solid #aba899;
   display: none;
@@ -151,18 +139,18 @@ a, a:link, a:visited, a:focus, a:hover, a:active, .textSelect > input:hover {
 .listSelect:after {
 	border-color: rgba(255, 255, 255, 0);
 	border-bottom-color: #ffffff;
-	border-width: 10px;
-	margin-left: -10px;
+	border-width: 6px;
+	margin-left: -6px;
 }
 .listSelect:before {
 	border-color: rgba(171, 168, 153, 0);
 	border-bottom-color: #aba899;
-	border-width: 11px;
-	margin-left: -11px;
+	border-width: 7px;
+	margin-left: -7px;
 }
 .listSelect > div {
   margin: 0px;
-  padding: 0px;
+  padding: 2px 0px 0px 0px;
   width: 100%;
   height: 290px;
   overflow: hidden;
@@ -171,18 +159,21 @@ a, a:link, a:visited, a:focus, a:hover, a:active, .textSelect > input:hover {
 ul.select {
   list-style: none;
   width: 100%;
-  padding: 5px;
+  padding: 0px;
   margin: 0px;
+  z-index: 1001;
 }
 ul.select > li {
   list-style: none;
   font-family: Arial;
   font-size: 12px;
+  line-height:  22px;
   color: #585857;
   margin: 0px;
-  padding: 0px;
+  padding: 0px 5px 0px 0px;
   cursor: pointer;
   background-color: #ffffff;
+  width: 100%;
 }
 ul.select > li:hover {
   background-color: #f2f2f2;
@@ -192,51 +183,4 @@ ul.select > li:hover {
 }
 .active {
   display: block !important
-}
-/* INPUT SEARCH */
-.searchbar-input
-{
-  width: 100%;
-  max-width: 590px;
-  height: 6vh;
-  background: #ffffff url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 13' enable-background='new 0 0 13 13'><g><path fill='%23334f67' d='M5,1c2.2,0,4,1.8,4,4S7.2,9,5,9S1,7.2,1,5S2.8,1,5,1 M5,0C2.2,0,0,2.2,0,5s2.2,5,5,5s5-2.2,5-5S7.8,0,5,0 L5,0z'/></g><line stroke='%23334f67' stroke-miterlimit='10' x1='12.6' y1='12.6' x2='8.2' y2='8.2'/></svg>") no-repeat 10px center;
-  -webkit-background-size: 23px 23px;
-     -moz-background-size: 23px 23px;
-      -ms-background-size: 23px 23px;
-       -o-background-size: 23px 23px;
-          background-size: 23px 23px;
-          
-  -webkit-background-position-x: 98%;
-     -moz-background-position-x: 98%;
-      -ms-background-position-x: 98%;
-       -o-background-position-x: 98%;
-          background-position-x: 98%;
-  border: 1px solid #aba899;
-  line-height: 41px;
-  text-align: right;
-  font-family: inherit;
-  font-size: 12px;
-  color: #334f67;
-  z-index: 2;
-}
-.searchbar-input input[type="search"] {
-  display: block;
-  width: 100%;
-  height: 6vh;
-  background: transparent;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-      -ms-appearance: none;
-          appearance: none;
-  border: 0px;
-  padding: 0 30px 0 5px;
-  line-height: 41px;
-  font-family: inherit;
-  font-weight: normal;
-  font-size: 14px;
-  color: #585857;
 }
